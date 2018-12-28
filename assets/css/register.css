@@ -1,0 +1,85 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+* {
+	color: black;
+}
+
+#mainContainer {
+    height: 100%;
+    width: 100%;
+	/*background-image: linear-gradient(to right, maroon, lightgrey, green);*/
+	background-image: url("../images/plane.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: table;
+}
+
+#loginContainer, #registerContainer {
+	margin: 20px 0 20px 0;
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+#clickLogin, #clickRegister {
+	border: 1.5px solid #111b92;
+	z-index: 4;
+    color: pink;
+    background-color: rgba(100, 40, 100, 0.2);
+    font-weight: 300;
+    width: 365px;
+    height: 50px;
+    letter-spacing: 1px;
+}
+
+#clickLogin:hover, #clickRegister:hover {
+	border: 1px solid white;
+	font-weight: 500;
+	color: white;
+	background-color: transparent;
+	letter-spacing: 4px;
+	transition: 0.5s;
+}
+
+#loginContainer {
+	border-right: 1px solid black;
+	z-index: 4;
+	z-index: 4;
+}
+
+#registerContainer {
+	border-left: 1px solid black;
+}
+
+.adminLoginForm, .studentLoginForm,
+.adminRegisterForm, .studentRegisterForm {
+	margin: 20px 0 20px 0;
+}
+
+form {
+	width: 350px;
+	display: inline-block;
+	text-align: center;
+}
+
+form input {
+	display: table-cell;
+	text-align: center;
+}
+
+#errorDiv {
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#mainContainer .container-fluid {
+	display: inline-block;
+	margin: 20px 0px 20px 0px;
+}
