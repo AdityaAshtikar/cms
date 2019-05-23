@@ -25,7 +25,7 @@
 			}
 		?>
 		<hr>
-		<p class="card-text">Submitted by: 
+		<p class="card-text">Submitted on: 
 			<?php 
 				echo "<em>" . $user['username'] . "</em>";
 			?> - <?php echo $book['created']; ?>
