@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2018 at 05:44 AM
+-- Generation Time: May 23, 2019 at 06:54 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -141,7 +141,8 @@ INSERT INTO `emails` (`id`, `email`, `created`) VALUES
 (1, 'Aasthahuja.01@gmail.com', '2018-10-31 00:00:00'),
 (2, 'ashtikar.aditya97@gmail.com', '2018-10-31 00:00:00'),
 (3, 'himanshuparmar1212@gmail.com', '2018-10-31 00:00:00'),
-(4, '	\r\nanilhansda07@gmail.com', '2018-10-31 00:00:00');
+(4, '	\r\nanilhansda07@gmail.com', '2018-10-31 00:00:00'),
+(5, 'mohdmaqsood612@gmail.com', '2019-04-24 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -204,7 +205,8 @@ INSERT INTO `qfa` (`id`, `q_id`, `f_id`, `appr`, `dppr`) VALUES
 (3, 3, 21, 0, 1),
 (4, 7, 25, 0, 1),
 (5, 9, 25, 0, 1),
-(6, 1, 26, 0, 1);
+(6, 1, 26, 0, 1),
+(7, 3, 2, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -233,7 +235,8 @@ CREATE TABLE `questions` (
 
 INSERT INTO `questions` (`id`, `qtext`, `user_id`, `status`, `isUnknown`, `fac_appr_count`, `upvote`, `downvote`, `upvote_fac_count`, `target_fac_id`, `created`, `appr_fac_id`) VALUES
 (1, 'when is the last date to submit the exam form', 26, 1, 0, 2, 0, 0, 0, 19, '2018-10-31 11:10:12', 1),
-(2, 'Attendance today?', 1, 1, 0, 0, 0, 0, 0, 0, '2018-12-27 11:56:51', 0);
+(2, 'Attendance today?', 1, 1, 0, 0, 0, 0, 0, 0, '2018-12-27 11:56:51', 0),
+(3, 'when will exams start ??', 2, 0, 0, 0, 0, 0, 0, 1, '2019-04-24 11:39:02', 0);
 
 -- --------------------------------------------------------
 
@@ -266,7 +269,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstName`, `lastName`, `username`, `department`, `email`, `phone`, `password`, `faculty_id`, `is_faculty`, `is_HOD`, `is_CR`, `profile_pic`, `isVerified`, `token`, `created`, `cookieToken`) VALUES
-(1, 'aditya', 'ashtikar', 'adi', 'CSE', 'ashtikar.aditya97@gmail.com', '8871877665', 'b0fdb96da124c5826f43895548874ed9', 'AQ8439', 1, 0, 0, 'assets/images/profilePic/939007-fernando-torres-wallpaper-2018-1920x1295-hd-1080p.jpg', 1, '', '2018-12-27 11:53:51', '54b6dda270b1a793cbc788d012f8aa71');
+(1, 'aditya', 'ashtikar', 'adi', 'CSE', 'ashtikar.aditya97@gmail.com', '8871877665', 'b0fdb96da124c5826f43895548874ed9', 'AQ8439', 1, 0, 0, 'assets/images/profilePic/939007-fernando-torres-wallpaper-2018-1920x1295-hd-1080p.jpg', 1, '', '2018-12-27 11:53:51', '77b18b1f23740890a2abaa71dcd685cd'),
+(2, 'mohammad', 'maqsood', 'maqe612', 'Mech', 'mohdmaqsood612@gmail.com', '9340827775', 'abd9c6cc43bef9a06eda6c1a1cd84b1b', '', 0, 0, 0, 'assets/images/profilePic/default.png', 1, '', '2019-04-24 11:35:12', '');
 
 --
 -- Indexes for dumped tables
@@ -352,7 +356,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `emails`
 --
 ALTER TABLE `emails`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `post`
@@ -370,19 +374,19 @@ ALTER TABLE `priority`
 -- AUTO_INCREMENT for table `qfa`
 --
 ALTER TABLE `qfa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
